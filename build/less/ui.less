@@ -9,3 +9,56 @@
 		display: flex;
 	}
 }
+.btn-toggle {
+	background: 0 0;
+	box-shadow: none;
+	border: none;
+	padding-left: 0;
+	border-radius: 0;
+    display: flex;
+    width: 100%;
+	align-items: center;
+    justify-content: space-between;
+    &:div:nth-child(1) {
+    	flex-grow: 1;
+    }
+    &.design-1 {
+    	border-bottom: 1px solid #cccccc;
+    	p {
+			margin: 0;
+			font-size: 20px;
+			color: #176281;
+			.srsb;
+		}
+		&:hover,&:focus,&:active {
+			border-bottom: 1px solid #cccccc;
+		}
+    }
+	&.collapsed {
+		.my-close {
+			display: block;
+		}
+		.my-open {
+			display: none;
+		}
+	}
+	.my-close {
+		display: none;
+	}
+	.my-open {
+		display: block;
+		transform:rotateZ(90deg);
+		will-change: rotate;
+	}
+	p {
+		color: #176281;
+		font-size: 20px;
+		.srsb;
+	}
+	&:hover,&:focus,&:active {
+		outline: none;
+		border: none;
+		box-shadow: none;
+		background: 0 0;
+	}
+}

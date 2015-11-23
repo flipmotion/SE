@@ -1,4 +1,12 @@
 $(document).ready(function() {
+	var owl = $('[data-item="slider"]');
+		$('[data-item="slider"]').owlCarousel({
+		loop:true,
+		margin:0,
+		nav:false,
+		dots:false,
+		items:1
+	});
 	// $("body").scrollspy({target: "#menu", offset:80});
 	// $('a.smooth').click(function(){
 	// 	$('html, body').animate({

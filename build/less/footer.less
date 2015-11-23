@@ -1,3 +1,139 @@
 .footer {
-	
+	&-lvl-1 {
+		background: #ededed;
+		padding: 10px 10px;
+		.nav-flex {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				font-size: 14px;
+				.srb;
+				margin: 0 20px;
+			}
+			&>div {
+				&:nth-child(2) {
+					flex-grow: 1;
+				}
+			}
+			button {
+				background: #ededed;
+				padding: 4px 15px 8px;
+				margin-left: 10px;
+				text-align: center;
+				.srr;
+				font-size: 15px;
+				color: #a2a2a2;
+				text-transform: uppercase;
+				border-radius: 0;
+				height: 40px;
+				&:hover,&:focus {
+					background: #f8f8f8;
+				}
+				span {
+					vertical-align: middle;
+					display: inline-block;
+					//margin-left: 10px;
+				}
+			}
+			input {
+				width: 100%;
+				background: #fff;
+				border: 1px solid #cbcbcb;
+				height: 40px;
+				text-align: center;
+				.srb;
+				font-size: 15px;
+				text-transform: uppercase;
+			}
+		}
+		form {
+			display: flex;
+			&>div {
+				&:nth-child(1) {
+					flex-grow: 1;
+				}
+			}
+		}
+		.social {
+			display: flex;
+			img {
+				margin: 0 2.5px;
+			}
+			&>div:nth-child(3) {
+				img {
+					margin-right: 0;
+				}
+			}
+			&>div:nth-child(1) {
+				img {
+					margin-left: 0;
+				}
+			}
+		}
+		.free-ship {
+			display: flex;
+			justify-content: center;
+			font-size: 13px;
+			text-transform: uppercase;
+			margin: 0 35px;
+			.bage {
+				background: #176281;
+				padding: 0 5px;
+				margin-right: 5px;
+				color: #fff;
+				display: inline-block;
+				border-radius: 4px;
+			}
+			p {
+				margin: 0;
+				.srb;
+				a {
+					font-weight: 400;
+					color:#6b6b6b;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&-lvl-2 {
+		background: #176281;
+		.nav-flex-bottom {
+			padding: 10px 0;
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0 30px;
+				display: flex;
+				justify-content: space-around;
+				a {
+					color: #fff;
+					text-transform: uppercase;
+					.srr;
+					text-decoration: none;
+					&:hover,&:focus {
+						text-decoration: none;
+						color: #b1e8ff;
+					}
+				}
+			}
+		}
+	}
+	&-lvl-3 {
+		.nav-flex-copy {
+			padding: 10px 0 10px;
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0 30px;
+				display: flex;
+				justify-content: space-between;
+				p {
+					text-transform: uppercase;
+					.srb;
+					font-size: 12px;
+				}
+			}
+		}
+	}
 }
