@@ -20,9 +20,144 @@
 	<![endif]-->
 </head>
 <body>
+<div class="close-nav"></div>
+	<offcanvas class="offcanvas" data-item="offcanvas">
+		<div class="offcanvas-header">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<div class="my-flex">
+						<div>
+							<button class="btn offcanvas-btn" data-item="offcanvas-menu">
+								<i class="glyphicon glyphicon-menu-right"></i>
+							</button>
+						</div>
+						<div>
+							<h3>Menu</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="viewport-menu">
+				<div class="offcanvas-body-item">
+					<a href="#">PRODUCT SALES</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Production Services</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Installation Services</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Project Gallery</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">CONTACT US</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">About</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Contractor</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Account</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Locations</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">Log In</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">NEW ACCOUNT</a>
+				</div>
+				<div class="offcanvas-body-item">
+					<a href="#">My CART ( <span>0</span> )</a>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-footer">
+			<div class="offcanvas-footer-lvl-1">
+				<div class="row">
+					<div class="col-xs-6 col-md-6 col-sm-6">
+						<button class="btn btn-default"><span>Log In</span></button>
+					</div>
+					<div class="col-xs-6 col-md-6 col-sm-6">
+						<button class="btn btn-default"><span>NEW ACCOUNT</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<form action="">
+						<div class="row">
+							<div class="col-xs-6 col-md-6 col-sm-6">
+								<input type="search" placeholder="Type to Search">
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-6">
+								<button type="submit" class="btn btn-default"><img src="assets/img/icons/search.png" alt=""><span>Search</span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<hr class="line" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<div class="free-ship">
+						<div><span class="bage">FREE</span></div>
+						<div><p>SHIPPING – <a href="#">CLICK FOR DETAILS</a></p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12">
+					<hr class="line" />
+				</div>
+			</div>
+			<div class="offcanvas-footer-lvl-2">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="social">
+							<div><a href="#" class="icon fb"><img src="assets/img/icons/fb.png" alt=""></a></div>
+							<div><a href="#" class="icon tw"><img src="assets/img/icons/tw.png" alt=""></a></div>
+							<div><a href="#" class="icon in"><img src="assets/img/icons/in.png" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</offcanvas>
+
 	<div class="sticky-page">
 		<section class="header">
-			<section class="header-lvl-1">
+			<section class="header-mob visible-xs">
+				<div class="container">
+					<div class="row my-flex">
+						<div class="col-md-3 col-sm-3 col-xs-3">
+							<a href="#" class="logo"><img src="assets/img/icons/logo.png" alt=""></a>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<p>1-800-662-1312</p>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 text-right">
+							<button type="button" class="navbar-toggle collapsed" data-item="offcanvas-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="header-lvl-1 hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 col-sm-6 col-xs-12">
@@ -65,7 +200,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="header-lvl-2">
+			<section class="header-lvl-2 hidden-xs">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
@@ -379,7 +514,7 @@
 			</div>
 		</section>
 	</div>
-	<section class="footer">
+	<section class="footer hidden-xs">
 		<section class="footer-lvl-1">
 			<div class="container">
 				<div class="row">

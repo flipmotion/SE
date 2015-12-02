@@ -7,6 +7,14 @@ $(document).ready(function() {
 		dots:false,
 		items:1
 	});
+	$('[data-item="offcanvas-menu"]').click(function(event){
+    	$('html').toggleClass('nav-active');
+    	event.preventDefault();
+    });
+    $('.close-nav').click(function(event){
+    	$('html').toggleClass('nav-active');
+    	event.preventDefault();
+    });
 	// $("body").scrollspy({target: "#menu", offset:80});
 	// $('a.smooth').click(function(){
 	// 	$('html, body').animate({

@@ -211,6 +211,64 @@
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
+	.sticky-page {
+		padding-top: 60px;
+	}
+	.nav-active {
+		.header-mob {
+			left: -300px;
+		}
+	}
+	.header-mob {
+		padding: 5px 0;
+		position: fixed;
+		transition:@transition;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+	 	background: #ededed;
+	 	border-bottom: 1px solid #176281;
+	 	.my-flex {
+			justify-content: center;
+			align-items: center;
+	 		&>div {
+	 			width: auto;
+	 			&:nth-child(2) {
+					flex-grow: 1;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+	 			}
+	 		}
+
+	 	}
+	 	.logo {
+	 		width: 80px;
+	 		display: inline-block;
+	 		img {
+	 			width: 100%;
+	 		}
+	 	}
+	 	p {
+			font-size: 16px;
+			margin:0;
+			color: #176281;
+			font-weight: 700;
+			font-style: normal;
+	 	}
+	 	.navbar-toggle {
+			border-color: #176281;
+			margin: 3px 0 3px 0;
+			.icon-bar {
+				background: #176281;
+			}
+	 	}
+	}
+
+
+
+
 	.header-lvl-1 .nav-top ul {
 		display: table;
 		.center-block;
@@ -326,17 +384,78 @@
 	}
 	body .continue {
     	padding: 12px 3px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
     body .update {
     	padding: 12px 13px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
     body .check {
     	padding: 12px 15px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
 	/*END card*/ 
 }
 
 @media (min-width:0px) and (max-width: 479px) {
+	.sticky-page {
+		padding-top: 60px;
+	}
+	.nav-active {
+		.header-mob {
+			left: -300px;
+		}
+	}
+	.header-mob {
+		padding: 5px 0;
+		position: fixed;
+		transition:@transition;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+	 	background: #ededed;
+	 	border-bottom: 1px solid #176281;
+	 	.my-flex {
+			justify-content: center;
+			align-items: center;
+	 		&>div {
+	 			width: auto;
+	 			&:nth-child(2) {
+					flex-grow: 1;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+	 			}
+	 		}
+
+	 	}
+	 	.logo {
+	 		width: 80px;
+	 		display: inline-block;
+	 		img {
+	 			width: 100%;
+	 		}
+	 	}
+	 	p {
+			font-size: 16px;
+			margin:0;
+			color: #176281;
+			font-weight: 700;
+			font-style: normal;
+	 	}
+	 	.navbar-toggle {
+			border-color: #176281;
+			margin: 3px 0 3px 0;
+			.icon-bar {
+				background: #176281;
+			}
+	 	}
+	}
+
 	.header-lvl-1 .nav-top ul {
 		display: table;
 		.center-block;
@@ -468,9 +587,14 @@
 		font-size: 13px;
 	}
 	.content .cardpage-item select {
-		font-size: 16px;
+		font-size: 12px;
+		    height: 25px;
 		padding: 0px 20px 0 2px;
 		background: url(../img/icons/arrow-bottom.png) center right 5px no-repeat;
+	}
+	.content .cardpage-item .delete {
+	    border: 0;
+	    width: 15px;
 	}
 	.content .subtotal {
 		padding: 22px 0;
@@ -486,13 +610,19 @@
 		font-size: 10px;
 	}
 	body .continue {
-    	padding: 12px 0px;
+    	padding: 12px 3px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
     body .update {
-    	padding: 12px 0px;
+    	padding: 12px 13px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
     body .check {
-    	padding: 12px 0px;
+    	padding: 12px 15px;
+    	width: 100%;
+    	margin-bottom: 15px;
     }
 	/*END card*/
 }
